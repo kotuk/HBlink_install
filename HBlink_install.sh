@@ -35,15 +35,6 @@ installpip() {
      python3 get-pip.py
 }
 
-installdmrutils3() {
-     echo "Installing dmr_utils3"
-     cd "$WORK_DIR/"
-     Git "$DMR_UTILS"
-     cd "$DMRUTL_DIR"
-     chmod +x install.sh
-     ./install.sh
-}
-
 installHBlink() {
      echo "Installing HBlink"
      cd "$WORK_DIR/"
@@ -53,6 +44,8 @@ installHBlink() {
      Pip3 $HBLINK_DIR/requirements.txt
 }
 
+installHBlinkService() {    
+}
 
 installHBmonitor() {
      echo "Installing HBmonitor"
@@ -64,12 +57,15 @@ installHBmonitor() {
      mkdir -p $HBMON_LOG
 }
 
+installHBmonitorService() {
+}
 
 installLibs
 installpip
-#installdmrutils3
 installHBlink
+installHBlinkService
 installHBmonitor
+installHBmonitorService
 
 echo "Complete!"
 
