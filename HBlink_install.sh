@@ -82,7 +82,7 @@ installHBmonitorService() {
      echo "Description=Start HBmonitor" >> $SYSCTL_HBM
      echo >> $SYSCTL_HBM
      echo "[Service]" >> $SYSCTL_HBM
-     echo "ExecStart=$HBLINK_DIR/$START_HBM" >> $SYSCTL_HBM
+     echo "ExecStart=$HBMON_DIR/$START_HBM" >> $SYSCTL_HBM
      echo >> $SYSCTL_HBM
      echo "[Install]" >> $SYSCTL_HBM
      echo "WantedBy=multi-user.target" >> $SYSCTL_HBM
