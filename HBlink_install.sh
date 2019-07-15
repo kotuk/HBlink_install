@@ -99,7 +99,7 @@ installHBmonitor
 installHBmonitorService
 
 echo "Complete!"
-echo "Please before starting services don't forget to make and edit configuration files"
+echo "Please before starting services don't forget to make and edit configuration files. locations: $HBLINK_DIR and $HBMON_DIR"
 echo "To start HBlink enter : service hblink start or systemctl start hblink"
 echo "To start HBmonitor enter : service hbmonitor start or systemctl start hbmonitor"
 
