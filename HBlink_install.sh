@@ -102,7 +102,7 @@ installHBmonitorService
 
 echo "Complete!"
 echo "Please before starting services don't forget to make and edit configuration files"
-echo "To start HBlink type : service hblink start or systemctl start hblink"
-echo "To start HBmonitor type : service hbmonitor start or systemctl start hbmonitor"
+echo "To start HBlink enter : service hblink start or systemctl start hblink"
+echo "To start HBmonitor enter : service hbmonitor start or systemctl start hbmonitor"
 
 ## END ##
