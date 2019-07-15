@@ -2,7 +2,6 @@
 
 #This script will compile and install a HBlink and HBmonitor
 
-
 # Globals
 HBLINK="https://github.com/n0mjs710/HBlink3.git"
 HBMONITOR="https://github.com/n0mjs710/HBmonitor.git"
@@ -61,7 +60,6 @@ installHBlinkService() {
      systemctl daemon-reload
      systemctl enable $SYSCTL_HBL
 }
-
 
 installHBmonitor() {
      echo "Installing HBmonitor"
