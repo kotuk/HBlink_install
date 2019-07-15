@@ -3,10 +3,10 @@
 #This script will compile and install a HBlink and HBmonitor
 
 # Globals
+WORK_DIR="/srv"                                    #you can change it to any dir like /opt or any other
 HBLINK="https://github.com/n0mjs710/HBlink3.git"
 HBMONITOR="https://github.com/n0mjs710/HBmonitor.git"
 PIP="https://bootstrap.pypa.io/get-pip.py"
-WORK_DIR="/srv"
 DMRUTL_DIR="$WORK_DIR/dmr_utils3"
 HBLINK_DIR="$WORK_DIR/HBlink3"
 HBMON_DIR="$WORK_DIR/HBmonitor"
