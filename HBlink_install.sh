@@ -12,6 +12,7 @@ WORK_DIR="/srv"
 DMRUTL_DIR="$WORK_DIR/dmr_utils3"
 HBLINK_DIR="$WORK_DIR/HBlink3"
 HBMON_DIR="$WORK_DIR/HBmonitor"
+HBMON_LOG="/var/log/link"
 
 ####  Routines  ################################################
 
@@ -25,6 +26,7 @@ installLibs() {
     sudo apt-get update
     sudo apt-get -y --force-yes install $PKGS \
       build-essential pkg-config python2.7 python3 python-pip python3-pip python-twisted python3-twisted.
+    python -m easy_install --upgrade pyOpenSSL
 }
 
 installpip() {
@@ -59,6 +61,7 @@ installHBmonitor() {
      cd $HBMON_DIR
      git pull
      Pip2 $HBMON_DIR/requirements.txt
+     mkdir -p $HBMON_LOG
 }
 
 
