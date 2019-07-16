@@ -1,4 +1,4 @@
-# HBlink and HB monitor installation
+# HBlink and HBmonitor installation
 
 Download script to your server/raspberry pi
 
