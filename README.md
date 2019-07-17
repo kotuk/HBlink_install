@@ -35,7 +35,4 @@ talkgroup_number:timeslot
 talkgroup number:timeslot
 
 e.g.:
-
 91:2
-
-92:1
