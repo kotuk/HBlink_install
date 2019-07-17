@@ -32,7 +32,5 @@ OBP-1
 tg.txt:
 talkgroup_number:timeslot
 
-talkgroup number:timeslot
-
 e.g.:
 91:2
